@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  body{
+      overflow-x: hidden;
+      width: 100%;
+  }
+  .NavBar__icon_wrapper{
+    @apply bg-gray-200 rounded-md p-[6px] text-[14px]
+     cursor-pointer
+    
+     hover:bg-blue-600
+     hover:text-white;
+     
+  } 
+
+  .NavBar__icon_wrapper1{
+    @apply bg-gray-200 rounded-md p-[6px] text-[14px]
+    cursor-pointer
+   
+    hover:bg-accent
+    hover:text-white;
+  }
+
+  .nav:hover{
+    color: #ff8f9c;
+    transition: all 0.4s;
+  }
+  .nav::after{
+    position: absolute;
+    content: "";
+    background-color: #ff8f9c;
+    height: 3px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    scale: 0;
+    transform-origin: right ;
+    transition: all 0.4s;
+  }
+  .nav:hover::after{
+    scale: 1;
+  }
+  .shop:hover{
+      border: 1px #ff8f9c solid;
+      color:#ff8f9c ;
+      transition: 0.4s ;
+  }
+  .card:hover{
+     transform: scale(1.1)  ;
+     transition: 1s;
+    
+  }
+  .ba img:hover{
+    transform: scale(1.1)  ;
+    transition: 1s;
+  }
+  .footer:hover{
+      color: #ff8f9c;
+      transition: 0.4s;
+  }
+  .btn:hover{
+    border: 1px #ff8f9c solid;
+    color:#ff8f9c ;
+    background-color: transparent;
+    transition: 0.4s ;
+  }
+  @media only screen and (min-width:0px) and (max-width:575px){
+    body{
+      
+        overflow-x: hidden;
+        width: 100%;
+    
+    }
+   .email{
+    padding-left: 10vh;
+   }
+  }
+  @media only screen and (min-width:576px) and (max-width:767px){
+    body{
+      
+        overflow-x: hidden;
+        width: 100%;
+    }
+    .foot{
+      background-color: #ff8f9c;
+    }
+  }
+  @media only screen and (min-width:768px) and (max-width:991px){
+    body{
+      
+        overflow-x: hidden;
+        width: 100%;
+    
+    }
+  }
+  @media only screen and (min-width:992px) and (max-width:1199px){
+    body{
+      
+        overflow-x: hidden;
+        width: 100%;
+    
+    }
+  }
+  
+ 
+  }
